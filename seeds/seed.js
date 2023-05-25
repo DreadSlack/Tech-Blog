@@ -1,0 +1,1 @@
+// lay the seed data for a 'stock' work
