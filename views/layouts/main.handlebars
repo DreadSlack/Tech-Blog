@@ -10,6 +10,28 @@
 
  <body>
 {{!-- add the bones to the site within here --}}
+    <header>
+      <h1>
+        Tech Blog
+      </h1>
+    </header>
+    <nav>
+      <div>
+        <a href="/">Home</a>
+      </div>
+      {{#if logged_in}}
+      <div>
+        <a href="/logout">Logout</a>
+      </div>
+      {{else}}
+      <div>
+        <a href="/login">Login/Sign Up</a>
+      </div>
+    </nav>
+    <main>
+      {{#if logged_in}}
+    </main>
+    <script src="/js/logout.js"> </script>
+    {{#if}}
 </body>
-
 </html>

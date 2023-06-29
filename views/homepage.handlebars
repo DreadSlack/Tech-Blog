@@ -1,1 +1,7 @@
 {{!-- create the homepage window --}}
+<h2>Here are some blog post by some people!</h2>
+
+{{#each blog as |blog|}}
+<a class="blogName" href="/blog/{{blog.id}}">{{blog.id}}</a>
+<p class="user">by: {{blog.user.name}}</p>
+{{/each}}
